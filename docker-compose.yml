@@ -58,6 +58,11 @@ services:
       CLOUDINARY_CLOUD_NAME: ${CLOUDINARY_CLOUD_NAME}
       CLOUDINARY_API_KEY: ${CLOUDINARY_API_KEY}
       CLOUDINARY_API_SECRET: ${CLOUDINARY_API_SECRET}
+
+      # ---- TIMEZONE FIX FOR SPRING BOOT ----
+      TZ: Asia/Kolkata
+      JAVA_OPTS: "-Duser.timezone=Asia/Kolkata"
+
     ports:
       - "8080:8080"
 
