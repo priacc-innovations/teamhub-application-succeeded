@@ -1,7 +1,7 @@
 version: "3.8"
 
 services:
-
+  ## ITS THE FIRST STEP TO DO THAT
   zookeeper:
     image: confluentinc/cp-zookeeper:7.4.0
     environment:
